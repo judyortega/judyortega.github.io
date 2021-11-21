@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        
+        <title>Contact Me</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Hind&family=Lobster&display=swap" rel="stylesheet">
+        
+        <!--
+            Actress Contact me page
+            Filename: contact-me.html
+
+            Author: Judith Ortega
+            Date: 04/21/2021
+            Page Description: Contact me page for Valerie Luevanos, actress.
+        -->
+        
+    </head>
+    
+    <body>
+        <div class="home-grid-container">
+<!-- Header links -->
+            <div class="item1">
+            <h1 class="header_heading">Valerie Luevanos</h1>
+            <h2 class="header_subheading">Actress: Los Angeles, CA</h2>
+            </div>
+<!-- Navigation links -->
+            <div class="item2">
+                <div class="nav-flex-container">
+                    <div><a href="index.html" title="Home" class="nav_links">Home</a></div>
+                    <div><a href="about-me.html" title="About Me" class="nav_links">About Me</a></div>
+                    <div><a href="resume.html" title="Resume" class="nav_links">Resume</a></div>
+                    <div><a href ="contact-me.html" title="Contact Me" class="nav_links">Contact Me</a></div>
+                </div>
+            </div>
+<!-- Page title -->
+            <div class="item3">
+                <h1 class="page_titles">Contact Me</h1>  
+            </div>
+            
+<!-- FORM -->
+            <div class="item7">
+                <p>Please submit the form below. I will contact you within 48 hours. Thanks for visiting my website.</p>
+                <form action="mailto:jaortega@mymail.tstc.edu" method="get">
+              <fieldset>
+                <legend>Your Info</legend>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" class="profile">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" email="email" class="profile"><br>
+                <label for="phone">Phone #:</label>
+                <input type="tel" id="phone" phone="phone" class="profile">
+                <label for="website">Website:</label>
+                <input type="url" id="website" website="website" class="profile">
+              </fieldset>
+
+              <fieldset>
+                      <label for="reasonforinquiry">Reason for Inquiry:</label>
+                      <select id="reasonforinquiry" name="reasonforinquiry">
+                        <option value="fitness">Acting</option>
+                        <option value="academics">Singing</option>
+                        <option value="parenting">Performing</option>
+                        <option value="networking">Networking</option>
+                        <option value="websiteproblems">Website Problems</option>
+                      </select> 
+              </fieldset>
+
+              <fieldset>
+                <legend>Comments</legend>
+                <textarea id="comments" name="comments" rows="6" cols="65">
+                </textarea>   
+              </fieldset>
+
+                <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset">
+                </div>
+        </form>
+            </div>
+            
+            <div class="item6">
+                <address class="normal_font">
+                Copyright<span> &#169;</span> 2021 Valerie Luevanos. All rights reserved.<br>
+                Email: <a class="footer" href=mailto: valerie.luevanos@gmail.com>valerie.luevanos@gmail.com</a><br>
+                Los Angeles, CA<br>
+                USA
+                </address>
+            </div>
+        </div>
+    </body>
