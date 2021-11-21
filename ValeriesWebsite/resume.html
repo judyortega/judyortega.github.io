@@ -1,0 +1,326 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        
+        <title>Resume</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Hind&family=Lobster&display=swap" rel="stylesheet">
+        
+        <!--
+            Actress Resume page
+            Filename: resume.html
+
+            Author: Judith Ortega
+            Date: 04/21/2021
+            Page Description: Resume page for Valerie Luevanos, actress.
+        -->
+        
+    </head>
+<!-- Embedded style sheet for body contents of webpage -- header, nav links, page title and footer are still using external style sheet -->
+    
+    <style>
+        .resume-item1 { 
+            grid-area: left;
+            background-color: #ddc8c4ff;
+    
+}
+
+        .resume-item2 {
+            grid-area: middle;
+            background-color: #ddc8c4ff;
+        }
+
+        .resume-item3 {
+            grid-area: right;
+            text-align: center;
+
+        }
+        .resume-item4 { 
+            grid-area: main;
+            background-color: #ddc8c4ff;
+        }
+        .resume-item5 { 
+            grid-area: bottom;
+            background-color: #ddc8c4ff;
+        }
+
+        .resume-grid-container {
+            display: grid;
+            grid-template-areas:
+            'left left middle middle right right'
+            'main main main main main main'
+            'bottom bottom bottom bottom bottom bottom';
+            grid-gap: 10px;
+            padding-top: 0px;
+ /*           padding: 10px;*/
+            width: 1080px;
+            margin: auto;
+            font-family: 'Hind', sans-serif;
+        }
+
+        .resume-grid-container > div {
+            /*background-color: #ddc8c4ff;*/
+            text-align: center;
+            padding: 0px 10px 0px 10px;
+*/            /*font-size: 30px;*/
+        }
+        
+        dt {
+            font-weight: bold;
+        }
+        
+        ul  {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        p {
+            text-align: left;
+        }
+        
+        img {
+            border: 8px solid rgba(19, 7, 12, 50%);
+        }
+        table {
+            border-collapse: collapse;
+            margin: auto auto 20px auto;
+            text-align: center;
+        }
+
+        th {
+          text-align: center;
+  /*        background-color: #80aaed;*/
+          color: #6b4d57ff;
+          font-size: 20px;
+          border-bottom: 4px solid;
+        }
+
+        caption {
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          padding-top: 1rem;
+        }
+
+        td, th {
+          padding: 0.5rem;
+/*          border: 1px solid black;
+*/        }
+
+/*        tbody tr:nth-child(odd),
+        tfoot tr:nth-child(even) {
+          background-color: rgba(128, 170, 237, 40%)
+        }*/
+
+        tfoot tr td:first-child {
+          border: none;
+          background-color: white;
+        }
+
+        tfoot {
+          border-top: 5px solid #152d54;
+        }
+        @media screen and (max-width: 600px) {
+            .resume-grid-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                'left right'
+                'middle middle'
+                'main main'
+                'bottom bottom';
+                width: auto;
+        }
+            img.resume_responsive {
+                width: 225px;
+                height: 320px;
+            }
+        }
+        
+    </style>
+    
+    <body>
+        <div class="home-grid-container">
+<!-- Header -->
+            <div class="item1">
+            <h1 class="header_heading">Valerie Luevanos</h1>
+            <h2 class="header_subheading">Actress: Los Angeles, CA</h2>
+            </div>
+<!-- Navigation links -->
+            <div class="item2">
+                <div class="nav-flex-container">
+                    <div><a href="index.html" title="Home">Home</a></div>
+                    <div><a href="about-me.html" title="About Me">About Me</a></div>
+                    <div><a href="resume.html" title="Resume">Resume</a></div>
+                    <div><a href ="contact-me.html" title="Contact Me">Contact Me</a></div>
+                </div>
+            </div>
+<!-- Page title -->
+            <div class="item3">
+                <h1 class="page_titles">Resume</h1>  
+            </div>
+        </div>
+<!-- Starts the use of embedded style sheet -->
+        <div class="resume-grid-container">
+            <div class="resume-item1">
+                <h3>Bio</h3>
+                <p>Height: 5'5"</p>
+                <p>Weight: 100 lbs</p>
+                <p>Eye Color: Brown</p>
+                <p>Hair Color: Brown</p>
+            </div>
+            <div class="resume-item2">
+                <h3>Education</h3>
+                <dl>
+                    <dt>Bachelor of Fine Arts in Musical Theatre</dt>
+                    <dd>American Musical and Dramatic Academy, Los Angeles, CA, USA</dd>
+                    <dt>Acting</dt>
+                    <dd>Paul Perry, Robert Cicchini, and Anthony Barrow</dd>
+                    <dt>Musical Theatre</dt>
+                    <dd>Eileen Barnett, Brooks Almy, Chandra Schwartz, Kirsten Chandler, Nick DeGruccio, Victoria Laven, Nicolas Connell, Sharon Kim</dd>
+                    <dt>Dance</dt>
+                    <dd>Erin Galvin, Johnnie Hobbs, Troy Rintala, Jon Engstrom, Sean Viator, Kyle Mchargh, Tracy Silver</dd>
+                    <dt>On Camera</dt>
+                    <dd>Katie Keane, Cain Devore, Jaymes Camery</dd>
+                </dl>
+            </div>
+            <div class="resume-item3">
+                <img src="images/valresumephoto.png" alt="Valerie Luevanos" width="300" height="426" class="resume_responsive">
+            </div>
+            <div class="resume-item4">
+                <table>
+                    <caption>Experience</caption>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th colspan="3" scope="colgroup">Theatre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ordinary Days</td>
+                            <td>Claire</td>
+                            <td>AMDA BFA Musical/Bobby Brader</td>
+                        </tr>
+                        <tr>
+                            <td>The Pajama Game</td>
+                            <td>Gladys</td>
+                            <td>AMDA Reading/Scott Conner</td>
+                        </tr>
+                        <tr>
+                            <td>A Night of Loesser</td>
+                            <td>Various Roleles</td>
+                            <td>AMDA Black Box/ Nick De Gruccio</td>
+                        </tr>
+                        <tr>
+                            <td>The Lion King</td>
+                            <td>Nala</td>
+                            <td>HHSS / Felipe Garcia</td>
+                        </tr>
+                        <tr>
+                            <td>Shrek the Musical</td>
+                            <td>Dragon</td>
+                            <td>HHSS / Felipe Garcia</td>
+                        </tr>
+                        <tr>
+                            <td>The Elephant Man</td>
+                            <td>Ms. Kendall</td>
+                            <td>HHSS / Lee Ann Ince</td>
+                        </tr>
+                        <tr>
+                            <td>You Can't Take It With You</td>
+                            <td>Alice</td>
+                            <td>HHSS / Lee Ann Ince</td>
+                        </tr>
+                        <tr>
+                            <td>Beauty and the Beast</td>
+                            <td>Belle</td>
+                            <td>HHSS / Felipe Garcia</td>
+                        </tr>
+                        <tr>
+                            <td>The Farnsworth Invention</td>
+                            <td>Pem</td>
+                            <td>HHSS / Lee Ann Ince</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="3" scope="colgroup">Cabaret</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cafe Series</td>
+                            <td>Featured Vocal Soloist</td>
+                            <td>AMDA/ Dir. Tracy Silver</td>
+                        </tr>
+                        <tr>
+                            <td>Raise the Barre</td>
+                            <td>Featured Vocal Soloist</td>
+                            <td>AMDA Cafe/ Dir. John Sloman</td>
+                        </tr>
+                    
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="3" scope="colgroup">Theatre Lab</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10 Minute Plays</td>
+                            <td>Lead</td>
+                            <td>AMDA SV/ Dir. Joel Bishop</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th colspan="3" scope="colgroup">Related Experience</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Emerson and Ivy</td>
+                            <td>Ivy</td>
+                            <td>AMDA SV/ Dir. Cain Devore</td>
+                        </tr>
+                        <tr>
+                            <td>Speech, Drama and Debate</td>
+                            <td>Competitor</td>
+                            <td>HHSS/ Coach. Lee Ann Ince</td>
+                        </tr>
+                    </tbody>
+                    
+                
+                </table>
+            </div>
+            <div class="resume-item5">
+                <h3>Speciality Skills</h3>
+                <ul>
+                    <li>Directing</li>
+                    <li>Writing</li>
+                    <li>Modeling</li>
+                    <li>Scatting</li>
+                </ul>
+            </div>  
+        </div>
+        <div class="home-grid-container">
+            <div class="item6">
+                <address class="normal_font">
+                Copyright<span> &#169;</span> 2021 Valerie Luevanos. All rights reserved.<br>
+                Email: <a class="footer" href=mailto: valerie.luevanos@gmail.com>valerie.luevanos@gmail.com</a><br>
+                Los Angeles, CA<br>
+                USA
+                </address>
+            </div>
+        
+        </div>
+    </body>
